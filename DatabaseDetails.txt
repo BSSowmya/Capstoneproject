@@ -1,0 +1,60 @@
+
+database name:	jobportaldb
+
+Database name:	jobportaldb
+
+
+tables:
+
+1. user
+		- id
+		- email
+		- password (in hash format)
+		- creationDate
+		- userType
+2. skillTables
+		- id
+		- skillName
+3. jobDetails
+		- id
+		- jobTitle
+		- jobDescription
+		- companyName
+		- location
+		- jobType
+		- salary
+		- postedDate
+		- domain
+		- jobCode
+		- skillsRequired
+		- applicationStatus
+				eg: open/closed
+4. profiles
+		- id
+		- firstName
+		- lastName
+		- email
+		- contact
+		- address
+		- about
+		- profilePic
+		- currentCompany
+		- ctc
+		- experience
+			eg. in years
+		- currentRole
+		- skills
+		- resumeLink
+		- expectedSalary
+		- preferredLocation
+
+5. jobs
+		- id
+		- userId
+			from candidateProfile
+		- jobCode
+		- appliedDate
+		- candidateApplicationStatus
+		- location
+			(fetch from jobDetails)
+
